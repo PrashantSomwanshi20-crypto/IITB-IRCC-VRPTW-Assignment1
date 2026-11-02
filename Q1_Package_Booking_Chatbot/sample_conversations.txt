@@ -1,0 +1,63 @@
+🤖 Chatbot is ready! (Type 'exit' to stop)
+
+You: I want to send a 5kg package to Mumbai
+Bot: Hello! I'd be happy to help you book your package delivery to Mumbai. 
+
+To proceed, could you please provide the package dimensions (Length, Width, and Height in cm)?
+
+You: Length 20cm, Width 20cm, Height 20cm
+
+[System API Call -> get_vehicle_options]
+Bot: Thank you for providing the dimensions! 
+
+Here are the available vehicle options for your package:
+1. **Bike** (Capacity: up to 15 kg)
+2. **Small Van** (Capacity: up to 50 kg)
+
+Which vehicle would you like to choose?
+
+You: Actually change the weight to 8kg and select Bike
+
+[System API Call -> check_package_compatibility]
+Bot: The Bike is compatible with your package!
+
+Here is a summary of your booking details:
+- **Destination:** Mumbai
+- **Weight:** 8 kg
+- **Dimensions:** 20 cm × 20 cm × 20 cm
+- **Vehicle:** Bike
+
+Please confirm if everything looks correct. Type **"Yes"** to confirm and complete your booking.
+
+You: Yes, confirm booking
+
+[System API Call -> save_booking]
+Bot: Your booking has been successfully confirmed!
+
+**Booking Details:**
+- **Booking ID:** BKG9909
+- **Destination:** Mumbai
+- **Vehicle:** Bike
+- **Weight:** 8 kg
+- **Dimensions:** 20 cm × 20 cm × 20 cm
+
+Thank you for booking with us! If you need any further assistance, feel free to ask.
+
+You: I want to send another package to Pune. Weight is 25kg, dimensions 60x60x60 cm, and I want to book a Bike.
+
+[System API Call -> check_package_compatibility]
+
+[System API Call -> get_vehicle_options]
+Bot: Unfortunately, a **Bike** cannot carry this package as the weight or dimensions exceed its capacity.
+
+Based on your package details (25 kg, 60 cm × 60 cm × 60 cm), the available option is:
+- **Large Truck** (Capacity: up to 500 kg)
+
+Would you like to select the **Large Truck** instead?
+
+You: No, I only wanted a Bike. Please cancel this booking.
+Bot: Understood. I have cancelled the booking request, and no booking has been made. 
+
+Please let me know if you need help with anything else in the future!
+
+You: 
